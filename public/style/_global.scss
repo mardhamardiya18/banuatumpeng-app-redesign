@@ -1,0 +1,9 @@
+@import "colors";
+* {
+    font-family: "Poppins", sans-serif;
+    text-decoration: none !important;
+    transition: all 0.2s ease-in-out;
+}
+body {
+    background-color: $cream1;
+}

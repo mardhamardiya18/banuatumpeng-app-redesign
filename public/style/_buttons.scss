@@ -1,0 +1,36 @@
+@import "colors";
+@import "fonts";
+
+.btn-master {
+    padding: 15px 30px;
+    border-radius: 50px;
+    font-weight: map-get($font-weights, medium);
+}
+.btn-pertama {
+    @extend .btn-master;
+    color: #fff;
+    background-color: $orange;
+    border: none;
+
+    &:hover {
+        background-color: $orange-hover;
+        color: $orange;
+    }
+}
+
+.btn-kedua {
+    @extend .btn-master;
+    color: $orange;
+    border: 2px solid $orange;
+    overflow: hidden;
+
+    &:hover {
+        background-color: $orange;
+        color: #fff;
+    }
+}
+.btn-ketiga {
+    @extend .btn-master;
+    color: #fff;
+    background-color: $maroon;
+}
