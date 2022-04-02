@@ -7,3 +7,37 @@
 body {
     background-color: $cream1;
 }
+.section-margin {
+    margin-top: 250px;
+
+    @include media-breakpoint-down(xxl) {
+        margin-top: 150px;
+    }
+    @include media-breakpoint-down(sm) {
+        margin-top: 100px;
+    }
+}
+.label-section {
+    font-weight: map-get($font-weights, medium);
+    font-size: 18px;
+    color: $hitam;
+    text-transform: uppercase;
+
+    @include media-breakpoint-down(sm) {
+        font-size: 16px;
+    }
+}
+.heading-section {
+    font-weight: map-get($font-weights, bold);
+    font-size: 36px;
+    color: $maroon;
+    margin-bottom: 50px;
+
+    @include media-breakpoint-down(xxl) {
+        font-size: 34px;
+    }
+    @include media-breakpoint-down(sm) {
+        font-size: 25px;
+        margin-bottom: 30px;
+    }
+}

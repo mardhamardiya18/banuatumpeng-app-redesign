@@ -68,6 +68,78 @@
         }
         @include media-breakpoint-down(sm) {
             margin-top: 60px;
+            padding: 0 10px;
+        }
+    }
+}
+
+.about {
+    background-color: $cream2;
+    border-radius: 70px 70px 0px 0px;
+    padding: 100px 0;
+
+    @include media-breakpoint-down(sm) {
+        border-radius: 30px 30px 0px 0px;
+        padding-top: 100px;
+    }
+
+    .heading-section {
+        span {
+            color: $orange;
+        }
+    }
+    .about-content {
+        span {
+            font-weight: map-get($font-weights, bold);
+            color: $maroon;
+        }
+    }
+    .thumbnail-about {
+        @include media-breakpoint-down(xxl) {
+            max-width: 500px;
+            width: 100%;
+        }
+    }
+    .btn-about-wrapper {
+        margin-top: 100px;
+
+        @include media-breakpoint-down(xxl) {
+            margin-top: 60px;
+        }
+    }
+    .ornabout {
+        @include media-breakpoint-down(xxl) {
+            max-width: 150px;
+            max-height: 300px;
+            width: 100%;
+            height: 100%;
+        }
+        @include media-breakpoint-between(md, lg) {
+            max-width: 70px;
+            max-height: 200px;
+            width: 100%;
+            height: 100%;
+        }
+        @include media-breakpoint-down(sm) {
+            max-width: 50px;
+            max-height: 100px;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+.service {
+    .card {
+        border: 2px solid $orange;
+        .title-card {
+            font-weight: map-get($font-weights, medium);
+            font-size: 25px;
+            color: $maroon;
+        }
+        &:hover {
+            background-color: $orange !important;
+            border: 2px solid transparent;
         }
     }
 }
