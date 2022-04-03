@@ -1,3 +1,4 @@
+// CSS HOME SECTION
 .home {
     margin-top: 70px;
     @include media-breakpoint-down(xxl) {
@@ -73,6 +74,7 @@
     }
 }
 
+// CSS ABOUT SECTION
 .about {
     background-color: $cream2;
     border-radius: 70px 70px 0px 0px;
@@ -129,8 +131,10 @@
     }
 }
 
+// CSS SERVICES SECTION
 .service {
     .card {
+        border-radius: 20px !important;
         border: 2px solid $orange;
         .title-card {
             font-weight: map-get($font-weights, medium);
@@ -141,5 +145,51 @@
             background-color: $orange !important;
             border: 2px solid transparent;
         }
+    }
+}
+
+// CSS PRODUCT SECTION
+.product {
+    background-color: $cream2;
+    padding: 100px 0;
+    color: #fff;
+    .row-banner {
+        background-color: $maroon;
+        border-radius: 20px !important;
+        h3 {
+            font-weight: map-get($font-weights, bold);
+            color: $orange;
+        }
+    }
+    .row-product {
+        margin-top: 100px;
+    }
+    .card {
+        border-radius: 20px;
+        overflow: hidden;
+        max-width: 315px;
+        max-height: 375px;
+
+        .caption-product {
+            font-weight: map-get($font-weights, medium);
+            font-size: 20px;
+        }
+
+        &:hover {
+            img {
+                transform: scale(110%);
+            }
+        }
+    }
+}
+
+// CSS TESTI SECTION
+.testi {
+    background-color: $cream1;
+    .card {
+        border-radius: 20px;
+    }
+    .heading-section {
+        margin-bottom: 20px;
     }
 }

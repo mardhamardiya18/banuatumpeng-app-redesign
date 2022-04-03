@@ -12249,6 +12249,7 @@ body {
 }
 
 .service .card {
+  border-radius: 20px !important;
   border: 2px solid #ecac5d;
 }
 
@@ -12261,5 +12262,54 @@ body {
 .service .card:hover {
   background-color: #ecac5d !important;
   border: 2px solid transparent;
+}
+
+.product {
+  background-color: #fffae1;
+  padding: 100px 0;
+  color: #fff;
+}
+
+.product .row-banner {
+  background-color: #911f27;
+  border-radius: 20px !important;
+}
+
+.product .row-banner h3, .product .row-banner .h3 {
+  font-weight: 700;
+  color: #ecac5d;
+}
+
+.product .row-product {
+  margin-top: 100px;
+}
+
+.product .card {
+  border-radius: 20px;
+  overflow: hidden;
+  max-width: 315px;
+  max-height: 375px;
+}
+
+.product .card .caption-product {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.product .card:hover img {
+  -webkit-transform: scale(110%);
+          transform: scale(110%);
+}
+
+.testi {
+  background-color: #fcf0c8;
+}
+
+.testi .card {
+  border-radius: 20px;
+}
+
+.testi .heading-section {
+  margin-bottom: 20px;
 }
 /*# sourceMappingURL=main.css.map */

@@ -93,7 +93,7 @@
             </div>
             <div class="row mt-5">
                 <div class="col-lg-3 col-md-6">
-                    <div class="card bg-transparent p-5">
+                    <div class="card rounded-3 bg-transparent p-5">
                         <div class="heading-card d-flex align-items-center justify-content-between">
                             <img src="/images/service1.svg" alt="">
                             <div class="title-card ms-3">Best Services</div>
@@ -106,7 +106,7 @@
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 mt-3 mt-sm-0">
-                    <div class="card bg-transparent p-5">
+                    <div class="card rounded-3 bg-transparent p-5">
                         <div class="heading-card d-flex align-items-center justify-content-between">
                             <img src="/images/service2.svg" alt="">
                             <div class="title-card ms-3">Event
@@ -125,7 +125,7 @@
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 mt-3 mt-sm-0">
-                    <div class="card bg-transparent p-5">
+                    <div class="card rounded-3 bg-transparent p-5">
                         <div class="heading-card d-flex align-items-center justify-content-between">
                             <img src="/images/service3.svg" alt="">
                             <div class="title-card ms-3">Delivery
@@ -138,7 +138,7 @@
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 mt-4 mt-lg-0">
-                    <div class="card bg-transparent p-5">
+                    <div class="card rounded-3 bg-transparent p-5">
                         <div class="heading-card d-flex align-items-center justify-content-between">
                             <img src="/images/service4.svg" alt="">
                             <div class="title-card ms-3">Food
@@ -153,8 +153,130 @@
             </div>
         </div>
     </section>
-
     {{-- Services Section End --}}
+
+    {{-- Product Section Start --}}
+    <section class="product section-margin">
+        <div class="container">
+            <div class="row row-banner mx-1 justify-content-between align-items-center rounded-3 px-3 py-5">
+                <div class="col-lg-4 offset-lg-1">
+                    <div class="heading-banner d-flex align-items-center">
+                        <h3 class="me-2 me-sm-3">GRATIS ONGKIR!</h3>
+                        <img src="/images/delivery-icon.svg" alt="">
+                    </div>
+                    <p>Untuk wilayah :</p>
+                    <p class="mb-4">Banjarmasin-Banjarbaru-Martapura
+                        dan Sekitarnya</p>
+                    <a href="#">Ketentuan Berlaku</a>
+                </div>
+                <div class="col-lg-3 offset-md-1 offset-lg-0 mt-5 mt-lg-0">
+                    <a href="#" class="btn-pertama">Pesan Sekarang</a>
+                </div>
+            </div>
+
+            <div class="row row-product text-center">
+                <div class="col-lg-12 ">
+                    <p class="label-section">Produk Kami</p>
+                    <h3 class="heading-section">Paket Menu Yang Kami Tawarkan</h3>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="card position-relative mx-auto">
+                        <img src="/images/tumpeng-homepage.webp" class=" img-fluid" alt="">
+                        <p class="caption-product position-absolute start-0 bottom-0 p-4">Paket <br>
+                            Tumpeng Besar</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card position-relative mx-auto mt-3 mt-sm-0">
+                        <img src="/images/tumpengmini-homepage.webp" class=" img-fluid" alt="">
+                        <p class="caption-product position-absolute start-0 bottom-0 p-4">Paket <br>
+                            Tumpeng Mini</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mt-4 mt-lg-0 mx-auto">
+                    <div class="card position-relative">
+                        <img src="/images/naskot-homepage.webp" class=" img-fluid" alt="">
+                        <p class="caption-product position-absolute start-0 bottom-0 p-4">Paket <br>
+                            Nasi Kotak</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mt-4 mt-lg-0 mx-auto">
+                    <div class="card position-relative">
+                        <img src="/images/bento-homepage.webp" class=" img-fluid" alt="">
+                        <p class="caption-product position-absolute start-0 bottom-0 p-4">Paket <br>
+                            Box Bento</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    {{-- Product Section End --}}
+
+    {{-- Testimoni Section Start --}}
+    <section class="testi section-margin">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5">
+                    <p class="label-section">testimoni</p>
+                    <h3 class="heading-section">Apa Yang Mereka Katakan ?</h3>
+                    <p class="subheading">Semua customer kami merasa puas
+                        dengan olahan dan pelayanan yang
+                        kami berikan
+                    </p>
+                </div>
+                <div class="col-lg-7 mt-5 mt-lg-0">
+                    <!-- Swiper -->
+                    <div class="swiper mySwiperTesti pb-5">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide card px-5 py-4">
+                                <i class='bx bxs-quote-left bx-md'></i>
+                                <p class="testi-content mt-1">
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. In, provident.
+                                </p>
+                                <div class="identity d-flex mt-4">
+                                    <img src="/images/user.png" class="img-fluid rounded-circle" alt="">
+                                    <div class="detail ms-3">
+                                        <p class="name m-0">Mardha Mardiya</p>
+                                        <p class="address m-0">Banjarbaru</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide card px-5 py-4">
+                                <i class='bx bxs-quote-left bx-md'></i>
+                                <p class="testi-content mt-1">
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. In, provident.
+                                </p>
+                                <div class="identity d-flex mt-4">
+                                    <img src="/images/user.png" class="img-fluid rounded-circle" alt="">
+                                    <div class="detail ms-3">
+                                        <p class="name m-0">Mardha Mardiya</p>
+                                        <p class="address m-0">Banjarbaru</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide card px-5 py-4">
+                                <i class='bx bxs-quote-left bx-md'></i>
+                                <p class="testi-content mt-1">
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. In, provident.
+                                </p>
+                                <div class="identity d-flex mt-4">
+                                    <img src="/images/user.png" class="img-fluid rounded-circle" alt="">
+                                    <div class="detail ms-3">
+                                        <p class="name m-0">Mardha Mardiya</p>
+                                        <p class="address m-0">Banjarbaru</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    {{-- Testimoni Section End --}}
 
 
 
