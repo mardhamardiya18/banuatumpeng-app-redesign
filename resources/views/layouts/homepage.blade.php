@@ -385,6 +385,63 @@
     </section>
     {{-- Subscribe Section End --}}
 
+    {{-- Footer Start --}}
+    <footer class="footer section-margin">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="logo-wrapper d-flex align-items-center">
+                        <img src="/images/logo.ico" class="img-fluid rounded-circle" alt="">
+                        <h3 class="ms-3">BANUA <br> TUMPENG</h3>
+                    </div>
+                    <a href="#" class="mt-4 d-inline-block text-dark">admin@banuatumpeng.com</a>
+                    <p class="phone mt-2">0851-5625-3408</p>
+                    <div class="sosmed-icon mt-5">
+                        <a href="#"><i class='bx bxl-whatsapp'></i></a>
+                        <a href="#"><i class='bx bxl-instagram mx-3'></i></a>
+                        <a href="#"><i class='bx bxl-facebook'></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mt-4 mt-lg-0">
+                    <h3>Pelayanan</h3>
+                    <ul>
+                        <li>Tumpeng Besar</li>
+                        <li>Tumpeng Mini</li>
+                        <li>Nasi Kotak</li>
+                        <li>Box Bento</li>
+                        <li>Prasmanan</li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6  mt-4 mt-lg-0">
+                    <h3>Informasi</h3>
+                    <ul>
+                        <li>Jam Kerja</li>
+                        <li>Ketentuan Umum</li>
+                        <li>Kontak</li>
+                        <li>Cara Pesan</li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6  mt-4 mt-lg-0">
+                    <h3>Alamat</h3>
+                    <p class="address mt-4">Komp Putra Tunggal Mandiri
+                        Jl.H.Tanda Blok.D No.06
+                        kel.Landasan Ulin Tengah
+                        Kec.Liang Anggang
+                        Kota Banjarbaru
+                        085156253408
+                    </p>
+                    <a href="#" class="maps">Google Maps</a>
+                </div>
+            </div>
+            <div class="row text-center mt-5">
+                <div class="col-12">
+                    <p>&copy;2022 banuatumpeng.com | all right reserved</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    {{-- Footer End --}}
+
 
 
     {{-- Script --}}

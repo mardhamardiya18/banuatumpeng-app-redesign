@@ -269,3 +269,42 @@
         }
     }
 }
+
+// FOOTER CSS SECTION
+.footer {
+    background: #fcf0c8;
+    border-radius: 60px 60px 0px 0px;
+
+    .logo-wrapper {
+        img {
+            width: 90px;
+            height: 90px;
+        }
+    }
+
+    h3 {
+        font-size: 22px;
+        font-weight: map-get($font-weights, bold);
+        color: $maroon;
+    }
+
+    ul {
+        padding: 0;
+        margin-top: 10px;
+
+        li {
+            margin: 20px 0;
+        }
+    }
+
+    .sosmed-icon {
+        i {
+            font-size: 40px;
+            color: $maroon;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+}

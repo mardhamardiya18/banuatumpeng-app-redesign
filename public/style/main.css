@@ -12001,6 +12001,7 @@ fieldset:disabled .btn {
 * {
   font-family: "Poppins", sans-serif;
   text-decoration: none !important;
+  list-style: none !important;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
@@ -12405,5 +12406,40 @@ body {
 
 .subscribe .container .form-group input:focus {
   outline: none;
+}
+
+.footer {
+  background: #fcf0c8;
+  border-radius: 60px 60px 0px 0px;
+}
+
+.footer .logo-wrapper img {
+  width: 90px;
+  height: 90px;
+}
+
+.footer h3, .footer .h3 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #911f27;
+}
+
+.footer ul {
+  padding: 0;
+  margin-top: 10px;
+}
+
+.footer ul li {
+  margin: 20px 0;
+}
+
+.footer .sosmed-icon i {
+  font-size: 40px;
+  color: #911f27;
+}
+
+.footer .sosmed-icon i:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 /*# sourceMappingURL=main.css.map */

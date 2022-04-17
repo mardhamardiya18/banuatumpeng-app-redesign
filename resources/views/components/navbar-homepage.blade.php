@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg navbar-light fixed-top pt-2 pt-lg-4">
     <div class="container">
         <a class="navbar-brand" href="#">
-            <img src="images/logo.ico" class="logo rounded-circle" alt="">
+            <img src="/images/logo.ico" class="logo rounded-circle" alt="">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
             aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
