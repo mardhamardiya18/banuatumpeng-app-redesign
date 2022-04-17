@@ -1,5 +1,5 @@
 <!-- Bootstrap CSS -->
-<link rel="stylesheet" href="style/main.css">
+<link rel="stylesheet" href="/style/main.css">
 
 {{-- Box Icon --}}
 <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>

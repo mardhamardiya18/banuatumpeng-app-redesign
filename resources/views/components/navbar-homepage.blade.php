@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-transparent pt-2 pt-lg-4">
+<nav class="navbar navbar-expand-lg navbar-light fixed-top pt-2 pt-lg-4">
     <div class="container">
         <a class="navbar-brand" href="#">
             <img src="images/logo.ico" class="logo rounded-circle" alt="">

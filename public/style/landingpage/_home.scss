@@ -1,11 +1,11 @@
 // CSS HOME SECTION
 .home {
-    margin-top: 70px;
+    margin-top: 180px;
     @include media-breakpoint-down(xxl) {
-        margin-top: 10px;
+        margin-top: 160px;
     }
     @include media-breakpoint-down(sm) {
-        margin-top: 60px;
+        margin-top: 140px;
     }
 
     .label {
@@ -231,7 +231,7 @@
                     bottom: 10px;
                     left: 20px;
                     color: #fff;
-                    font-size: 15px;
+                    font-size: 13px;
                 }
 
                 &:hover {
@@ -250,5 +250,22 @@
 
     .row-btn-more {
         margin-top: 100px;
+    }
+}
+
+// SUBSCRIBE CSS SECTION
+.subscribe {
+    .container {
+        background-color: $maroon;
+        border-radius: 20px;
+        padding: 50px 0;
+
+        .form-group {
+            border-radius: 15px;
+
+            input:focus {
+                outline: none;
+            }
+        }
     }
 }

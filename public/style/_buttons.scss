@@ -5,6 +5,10 @@
     padding: 15px 30px;
     border-radius: 50px;
     font-weight: map-get($font-weights, medium);
+
+    @include media-breakpoint-down(sm) {
+        padding: 10px 20px;
+    }
 }
 .btn-pertama {
     @extend .btn-master;

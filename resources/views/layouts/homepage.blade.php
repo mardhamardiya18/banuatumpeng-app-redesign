@@ -93,7 +93,7 @@
             </div>
             <div class="row mt-5">
                 <div class="col-lg-3 col-md-6">
-                    <div class="card rounded-3 bg-transparent p-5">
+                    <div class="card rounded-3 bg-transparent p-4 p-xxl-5">
                         <div class="heading-card d-flex align-items-center justify-content-between">
                             <img src="/images/service1.svg" alt="">
                             <div class="title-card ms-3">Best Services</div>
@@ -106,7 +106,7 @@
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 mt-3 mt-sm-0">
-                    <div class="card rounded-3 bg-transparent p-5">
+                    <div class="card rounded-3 bg-transparent p-4 p-xxl-5">
                         <div class="heading-card d-flex align-items-center justify-content-between">
                             <img src="/images/service2.svg" alt="">
                             <div class="title-card ms-3">Event
@@ -125,7 +125,7 @@
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 mt-3 mt-sm-0">
-                    <div class="card rounded-3 bg-transparent p-5">
+                    <div class="card rounded-3 bg-transparent p-4 p-xxl-5">
                         <div class="heading-card d-flex align-items-center justify-content-between">
                             <img src="/images/service3.svg" alt="">
                             <div class="title-card ms-3">Delivery
@@ -138,7 +138,7 @@
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 mt-4 mt-lg-0">
-                    <div class="card rounded-3 bg-transparent p-5">
+                    <div class="card rounded-3 bg-transparent p-4 p-xxl-5">
                         <div class="heading-card d-flex align-items-center justify-content-between">
                             <img src="/images/service4.svg" alt="">
                             <div class="title-card ms-3">Food
@@ -357,6 +357,33 @@
         </div>
     </section>
     {{-- Blog Section End --}}
+
+    {{-- Subscribe Section Start --}}
+    <section class="subscribe section-margin px-2">
+        <div class="container">
+            <div class="row justify-content-center text-center ">
+                <div class="col-lg-6 col-10">
+                    <p class="label-section text-white">subscriptions</p>
+                    <h1 class="heading-section text-white">Dapatkan Informasi Up to Date
+                        Dari Banuatumpeng</h1>
+                </div>
+            </div>
+            <div class="row justify-content-center text-center mt-5">
+                <div class="col-md-8 col-10">
+                    <form>
+                        <div
+                            class="form-group bg-white d-flex justify-content-between px-4 py-2 flex-column flex-sm-row">
+                            <input type="email" required class=" w-100 border-0 text-center text-sm-start"
+                                placeholder="Masukan email anda">
+                            <button type="submit" class="btn-pertama mt-4 mt-sm-0">Subscribe</button>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    {{-- Subscribe Section End --}}
 
 
 

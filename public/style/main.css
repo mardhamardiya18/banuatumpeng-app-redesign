@@ -11965,6 +11965,12 @@ fieldset:disabled .btn {
   font-weight: 500;
 }
 
+@media (max-width: 575.98px) {
+  .btn-master, .btn-pertama, .btn-kedua, .btn-ketiga {
+    padding: 10px 20px;
+  }
+}
+
 .btn-pertama {
   color: #fff;
   background-color: #ecac5d;
@@ -12086,19 +12092,26 @@ body {
   }
 }
 
+.navbar.active {
+  background-color: #fcf0c8;
+  padding: 10px 0 !important;
+  -webkit-box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.073);
+          box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.073);
+}
+
 .home {
-  margin-top: 70px;
+  margin-top: 180px;
 }
 
 @media (max-width: 1399.98px) {
   .home {
-    margin-top: 10px;
+    margin-top: 160px;
   }
 }
 
 @media (max-width: 575.98px) {
   .home {
-    margin-top: 60px;
+    margin-top: 140px;
   }
 }
 
@@ -12363,7 +12376,7 @@ body {
   bottom: 10px;
   left: 20px;
   color: #fff;
-  font-size: 15px;
+  font-size: 13px;
 }
 
 .blog .row-blog-card .card .img-box:hover img {
@@ -12378,5 +12391,19 @@ body {
 
 .blog .row-btn-more {
   margin-top: 100px;
+}
+
+.subscribe .container {
+  background-color: #911f27;
+  border-radius: 20px;
+  padding: 50px 0;
+}
+
+.subscribe .container .form-group {
+  border-radius: 15px;
+}
+
+.subscribe .container .form-group input:focus {
+  outline: none;
 }
 /*# sourceMappingURL=main.css.map */
