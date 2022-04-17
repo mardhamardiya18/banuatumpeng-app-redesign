@@ -9,23 +9,23 @@
 .btn-pertama {
     @extend .btn-master;
     color: #fff;
-    background-color: $orange;
+    background-color: $orange-main;
     border: none;
 
     &:hover {
         background-color: $orange-hover;
-        color: $orange;
+        color: $orange-main;
     }
 }
 
 .btn-kedua {
     @extend .btn-master;
-    color: $orange;
-    border: 2px solid $orange;
+    color: $orange-main;
+    border: 2px solid $orange-main;
     overflow: hidden;
 
     &:hover {
-        background-color: $orange;
+        background-color: $orange-main;
         color: #fff;
     }
 }

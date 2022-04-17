@@ -278,6 +278,86 @@
     </section>
     {{-- Testimoni Section End --}}
 
+    {{-- Blog Section Start --}}
+    <section class="blog section-margin">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-12">
+                    <p class="label-section">Blog & Tips</p>
+                    <h3 class="heading-section">Temukan Informasi Menarik Disini </h3>
+                </div>
+            </div>
+            <div class="row row-blog-card">
+                <div class="col-lg-3 col-md-6">
+                    <div class="card mx-auto">
+                        <div class="img-box position-relative">
+                            <img src="/images/blog.png" class="img-fluid" alt="">
+                            <p class="category-blog position-absolute">Masakan</p>
+                        </div>
+                        <div class="card-body">
+                            <small class="text-muted date-publish">10 April 2022</small>
+                            <p class="title-blog">Rahasia Olahan Dapur
+                                Disukai Keluarga Ibu-Ibu
+                                Wajib Tau</p>
+                            <a href="#">Baca selengkapnya</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mt-4 mt-sm-0">
+                    <div class="card mx-auto">
+                        <div class="img-box position-relative">
+                            <img src="/images/blog.png" class="img-fluid" alt="">
+                            <p class="category-blog position-absolute">Masakan</p>
+                        </div>
+                        <div class="card-body">
+                            <small class="text-muted date-publish">10 April 2022</small>
+                            <p class="title-blog">Rahasia Olahan Dapur
+                                Disukai Keluarga Ibu-Ibu
+                                Wajib Tau</p>
+                            <a href="#">Baca selengkapnya</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mt-4 mt-lg-0">
+                    <div class="card mx-auto">
+                        <div class="img-box position-relative">
+                            <img src="/images/blog.png" class="img-fluid" alt="">
+                            <p class="category-blog position-absolute">Masakan</p>
+                        </div>
+                        <div class="card-body">
+                            <small class="text-muted date-publish">10 April 2022</small>
+                            <p class="title-blog">Rahasia Olahan Dapur
+                                Disukai Keluarga Ibu-Ibu
+                                Wajib Tau</p>
+                            <a href="#">Baca selengkapnya</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mt-4 mt-lg-0">
+                    <div class="card mx-auto">
+                        <div class="img-box position-relative">
+                            <img src="/images/blog.png" class="img-fluid" alt="">
+                            <p class="category-blog position-absolute">Masakan</p>
+                        </div>
+                        <div class="card-body">
+                            <small class="text-muted date-publish">10 April 2022</small>
+                            <p class="title-blog">Rahasia Olahan Dapur
+                                Disukai Keluarga Ibu-Ibu
+                                Wajib Tau</p>
+                            <a href="#">Baca selengkapnya</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row row-btn-more">
+                <div class="col-12 text-center text-sm-end">
+                    <a href="#" class="btn-pertama">Temukan Artikel Lainnya</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    {{-- Blog Section End --}}
+
 
 
     {{-- Script --}}
