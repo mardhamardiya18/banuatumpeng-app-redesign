@@ -1,25 +1,12 @@
-<!doctype html>
-<html lang="en">
+@extends('layouts.app')
 
-<head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="img/svg" href="images/logo.svg">
+@section('title')
+    Banuatumpeng | Solusi Konsumsi Sukses
+@endsection
 
-    {{-- Style --}}
-    @stack('prepend-style')
-    @include('components.style')
-    @stack('addon-style')
-
-    <title>Banuatumpeng - Solusi Konsumsi Acara Anda</title>
-</head>
-
-<body>
-    @include('components.navbar-homepage')
-
+@section('content')
     {{-- Header Section Start --}}
-    <section class="home">
+    <section class="home" id="home">
         <div class="container">
             <div class="row align-content-center">
                 <div class="col-lg-6 d-flex flex-column justify-content-center">
@@ -33,8 +20,9 @@
                         acara spesial pian</div>
 
                     <div class="buttons text-center text-sm-start">
-                        <a href="#" class="btn-pertama d-block d-sm-inline">Telusuri</a>
-                        <a href="#" class="btn-kedua d-block d-sm-inline mt-3 mt-sm-0 ms-sm-4">Kontak kami</a>
+                        <a href="#about" class="btn-pertama d-block d-sm-inline">Telusuri</a>
+                        <a href="https://wa.link/ocl02u" class="btn-kedua d-block d-sm-inline mt-3 mt-sm-0 ms-sm-4">Kontak
+                            kami</a>
                     </div>
                 </div>
                 <div class="col-lg-6 p-0">
@@ -47,7 +35,7 @@
     {{-- Header Section End --}}
 
     {{-- About Section Start --}}
-    <section class="about section-margin position-relative">
+    <section class="about section-margin position-relative" id="about">
         <img src="/images/ornabout1.svg" class="ornabout position-absolute top-0 start-0" alt="">
         <img src="/images/ornabout2.svg" class="ornabout position-absolute top-0 end-0" alt="">
         <div class="container">
@@ -71,8 +59,10 @@
                         tahun dan tentunya selalu mengutamakan pelayanan terbaik.</p>
 
                     <div class="btn-about-wrapper">
-                        <a href="#" class="btn-pertama text-center d-block d-sm-inline">Kontak Kami</a>
-                        <a href="#" class="btn-kedua text-center d-block d-sm-inline mt-3 mt-sm-0 ms-sm-4 ms-0">Kunjungi
+                        <a href="https://wa.link/ocl02u" class="btn-pertama text-center d-block d-sm-inline">Kontak
+                            Kami</a>
+                        <a href="https://instagram.com/banuatumpeng"
+                            class="btn-kedua text-center d-block d-sm-inline mt-3 mt-sm-0 ms-sm-4 ms-0">Kunjungi
                             Instagram</a>
                     </div>
                 </div>
@@ -82,7 +72,7 @@
     {{-- About Section End --}}
 
     {{-- Services Section Start --}}
-    <section class="service section-margin">
+    <section class="service section-margin" id="service">
         <div class="container">
             <div class="row text-center">
                 <div class="col-lg-6 col-md-10 mx-auto">
@@ -156,7 +146,7 @@
     {{-- Services Section End --}}
 
     {{-- Product Section Start --}}
-    <section class="product section-margin">
+    <section class="product section-margin" id="product">
         <div class="container">
             <div class="row row-banner mx-1 justify-content-between align-items-center rounded-3 px-3 py-5">
                 <div class="col-lg-4 offset-lg-1">
@@ -167,10 +157,12 @@
                     <p>Untuk wilayah :</p>
                     <p class="mb-4">Banjarmasin-Banjarbaru-Martapura
                         dan Sekitarnya</p>
-                    <a href="#">Ketentuan Berlaku</a>
+                    <a tabindex="1" class="text-primary" role="button" data-bs-toggle="popover" data-bs-trigger="focus"
+                        data-bs-content="Tersedia untuk pesanan 50 pcs ke atas 😃">Ketentuan
+                        Berlaku</a>
                 </div>
                 <div class="col-lg-3 offset-md-1 offset-lg-0 mt-5 mt-lg-0">
-                    <a href="#" class="btn-pertama">Pesan Sekarang</a>
+                    <a href="https://wa.link/ocl02u" class="btn-pertama">Pesan Sekarang</a>
                 </div>
             </div>
 
@@ -215,7 +207,7 @@
     {{-- Product Section End --}}
 
     {{-- Testimoni Section Start --}}
-    <section class="testi section-margin">
+    <section class="testi section-margin" id="testi">
         <div class="container">
             <div class="row">
                 <div class="col-lg-5">
@@ -230,45 +222,66 @@
                     <!-- Swiper -->
                     <div class="swiper mySwiperTesti pb-5">
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide card px-5 py-4">
-                                <i class='bx bxs-quote-left bx-md'></i>
-                                <p class="testi-content mt-1">
-                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. In, provident.
-                                </p>
-                                <div class="identity d-flex mt-4">
-                                    <img src="/images/user.png" class="img-fluid rounded-circle" alt="">
-                                    <div class="detail ms-3">
-                                        <p class="name m-0">Mardha Mardiya</p>
-                                        <p class="address m-0">Banjarbaru</p>
+                            @forelse ($testies as $testi)
+                                <div class="swiper-slide card px-5 py-4">
+                                    <i class='bx bxs-quote-left bx-md'></i>
+                                    <p class="testi-content mt-1">
+                                        {{ $testi->content }}
+                                    </p>
+                                    <div class="rating mt-4">
+                                        @if ($testi->rating == 'tidak puas')
+                                            <i class="bx bxs-star bx-sm"></i>
+                                            <i class="bx bx-star bx-sm"></i>
+                                            <i class="bx bx-star bx-sm"></i>
+                                            <i class="bx bx-star bx-sm"></i>
+                                            <i class="bx bx-star bx-sm"></i>
+                                        @elseif ($testi->rating == 'kurang puas')
+                                            <i class="bx bxs-star bx-sm"></i>
+                                            <i class="bx bxs-star bx-sm"></i>
+                                            <i class="bx bx-star bx-sm"></i>
+                                            <i class="bx bx-star bx-sm"></i>
+                                            <i class="bx bx-star bx-sm"></i>
+                                        @elseif ($testi->rating == 'puas')
+                                            <i class="bx bxs-star bx-sm"></i>
+                                            <i class="bx bxs-star bx-sm"></i>
+                                            <i class="bx bxs-star bx-sm"></i>
+                                            <i class="bx bx-star bx-sm"></i>
+                                            <i class="bx bx-star bx-sm"></i>
+                                        @elseif ($testi->rating == 'puas banget')
+                                            <i class="bx bxs-star bx-sm"></i>
+                                            <i class="bx bxs-star bx-sm"></i>
+                                            <i class="bx bxs-star bx-sm"></i>
+                                            <i class="bx bxs-star bx-sm"></i>
+                                            <i class="bx bx-star bx-sm"></i>
+                                        @elseif ($testi->rating == 'sangat puas banget')
+                                            <i class="bx bxs-star bx-sm"></i>
+                                            <i class="bx bxs-star bx-sm"></i>
+                                            <i class="bx bxs-star bx-sm"></i>
+                                            <i class="bx bxs-star bx-sm"></i>
+                                            <i class="bx bxs-star bx-sm"></i>
+                                        @endif
+
+                                    </div>
+                                    <div class="identity d-flex mt-3">
+                                        @if ($testi->user->avatar)
+                                            <img src="{{ Storage::url($testi->user->avatar) }}"
+                                                class="img-fluid rounded-circle" alt="">
+                                        @else
+                                            <img src="{{ App\Models\User::gravatar() }}" class="img-fluid rounded-circle"
+                                                alt="">
+                                        @endif
+
+                                        <div class="detail ms-3">
+                                            <p class="name m-0 fw-bold">{{ $testi->name }}</p>
+                                            <small class="address text-muted m-0">{{ $testi->address }}</small>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="swiper-slide card px-5 py-4">
-                                <i class='bx bxs-quote-left bx-md'></i>
-                                <p class="testi-content mt-1">
-                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. In, provident.
-                                </p>
-                                <div class="identity d-flex mt-4">
-                                    <img src="/images/user.png" class="img-fluid rounded-circle" alt="">
-                                    <div class="detail ms-3">
-                                        <p class="name m-0">Mardha Mardiya</p>
-                                        <p class="address m-0">Banjarbaru</p>
-                                    </div>
+                            @empty
+                                <div class="none-text mx-auto">
+                                    ----Tidak Ada Testimoni----
                                 </div>
-                            </div>
-                            <div class="swiper-slide card px-5 py-4">
-                                <i class='bx bxs-quote-left bx-md'></i>
-                                <p class="testi-content mt-1">
-                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. In, provident.
-                                </p>
-                                <div class="identity d-flex mt-4">
-                                    <img src="/images/user.png" class="img-fluid rounded-circle" alt="">
-                                    <div class="detail ms-3">
-                                        <p class="name m-0">Mardha Mardiya</p>
-                                        <p class="address m-0">Banjarbaru</p>
-                                    </div>
-                                </div>
-                            </div>
+                            @endforelse
                         </div>
                         <div class="swiper-pagination"></div>
                     </div>
@@ -279,7 +292,7 @@
     {{-- Testimoni Section End --}}
 
     {{-- Blog Section Start --}}
-    <section class="blog section-margin">
+    <section class="blog section-margin" id="artikel">
         <div class="container">
             <div class="row text-center">
                 <div class="col-12">
@@ -371,8 +384,7 @@
             <div class="row justify-content-center text-center mt-5">
                 <div class="col-md-8 col-10">
                     <form>
-                        <div
-                            class="form-group bg-white d-flex justify-content-between px-4 py-2 flex-column flex-sm-row">
+                        <div class="form-group bg-white d-flex justify-content-between px-4 py-2 flex-column flex-sm-row">
                             <input type="email" required class=" w-100 border-0 text-center text-sm-start"
                                 placeholder="Masukan email anda">
                             <button type="submit" class="btn-pertama mt-4 mt-sm-0">Subscribe</button>
@@ -384,70 +396,4 @@
         </div>
     </section>
     {{-- Subscribe Section End --}}
-
-    {{-- Footer Start --}}
-    <footer class="footer section-margin">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="logo-wrapper d-flex align-items-center">
-                        <img src="/images/logo.ico" class="img-fluid rounded-circle" alt="">
-                        <h3 class="ms-3">BANUA <br> TUMPENG</h3>
-                    </div>
-                    <a href="#" class="mt-4 d-inline-block text-dark">admin@banuatumpeng.com</a>
-                    <p class="phone mt-2">0851-5625-3408</p>
-                    <div class="sosmed-icon mt-5">
-                        <a href="#"><i class='bx bxl-whatsapp'></i></a>
-                        <a href="#"><i class='bx bxl-instagram mx-3'></i></a>
-                        <a href="#"><i class='bx bxl-facebook'></i></a>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-md-6 mt-4 mt-lg-0">
-                    <h3>Pelayanan</h3>
-                    <ul>
-                        <li>Tumpeng Besar</li>
-                        <li>Tumpeng Mini</li>
-                        <li>Nasi Kotak</li>
-                        <li>Box Bento</li>
-                        <li>Prasmanan</li>
-                    </ul>
-                </div>
-                <div class="col-lg-2 col-md-6  mt-4 mt-lg-0">
-                    <h3>Informasi</h3>
-                    <ul>
-                        <li>Jam Kerja</li>
-                        <li>Ketentuan Umum</li>
-                        <li>Kontak</li>
-                        <li>Cara Pesan</li>
-                    </ul>
-                </div>
-                <div class="col-lg-2 col-md-6  mt-4 mt-lg-0">
-                    <h3>Alamat</h3>
-                    <p class="address mt-4">Komp Putra Tunggal Mandiri
-                        Jl.H.Tanda Blok.D No.06
-                        kel.Landasan Ulin Tengah
-                        Kec.Liang Anggang
-                        Kota Banjarbaru
-                        085156253408
-                    </p>
-                    <a href="#" class="maps">Google Maps</a>
-                </div>
-            </div>
-            <div class="row text-center mt-5">
-                <div class="col-12">
-                    <p>&copy;2022 banuatumpeng.com | all right reserved</p>
-                </div>
-            </div>
-        </div>
-    </footer>
-    {{-- Footer End --}}
-
-
-
-    {{-- Script --}}
-    @stack('prepend-script')
-    @include('components.script')
-    @stack('addon-script')
-</body>
-
-</html>
+@endsection

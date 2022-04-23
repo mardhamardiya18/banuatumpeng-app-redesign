@@ -5,7 +5,12 @@
 @import "global";
 @import "fonts";
 @import "navbar";
-
+@import "transitions/slide-fade";
 // Landing Page start
 @import "landingpage/home";
+@import "landingpage/katalog";
 // Landing Page End
+
+// Testimoni start
+@import "testimoni/style";
+// Testimoni end

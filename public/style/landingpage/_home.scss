@@ -188,6 +188,19 @@
     background-color: $cream1;
     .card {
         border-radius: 20px;
+        background-color: $maroon;
+        color: #ede9e9;
+        border-left: 6px solid $orange-main;
+
+        .address {
+            color: $orange-main !important;
+        }
+
+        .rating {
+            i {
+                color: rgb(226, 219, 0);
+            }
+        }
     }
     .heading-section {
         margin-bottom: 20px;

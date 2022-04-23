@@ -11965,9 +11965,9 @@ fieldset:disabled .btn {
   font-weight: 500;
 }
 
-@media (max-width: 575.98px) {
+@media (max-width: 1399.98px) {
   .btn-master, .btn-pertama, .btn-kedua, .btn-ketiga {
-    padding: 10px 20px;
+    padding: 10px 22px;
   }
 }
 
@@ -12098,6 +12098,23 @@ body {
   padding: 10px 0 !important;
   -webkit-box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.073);
           box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.073);
+}
+
+.slide-fade-enter-active {
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.slide-fade-leave-active {
+  -webkit-transition: all 0.2s cubic-bezier(1, 0.5 0.8, 1);
+  transition: all 0.2s cubic-bezier(1, 0.5 0.8, 1);
+}
+
+.slide-fade-enter,
+.slide-fade-leave-to {
+  -webkit-transform: translateY(10px);
+          transform: translateY(10px);
+  opacity: 0.5;
 }
 
 .home {
@@ -12321,6 +12338,17 @@ body {
 
 .testi .card {
   border-radius: 20px;
+  background-color: #911f27;
+  color: #ede9e9;
+  border-left: 6px solid #ecac5d;
+}
+
+.testi .card .address {
+  color: #ecac5d !important;
+}
+
+.testi .card .rating i {
+  color: #e2db00;
 }
 
 .testi .heading-section {
@@ -12441,5 +12469,262 @@ body {
 .footer .sosmed-icon i:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+}
+
+@media (max-width: 1399.98px) {
+  .paket .categories a {
+    font-size: 14px;
+  }
+}
+
+.paket .row-paket {
+  margin-top: 80px;
+}
+
+.paket .row-paket .card {
+  border: none;
+  border-radius: 20px;
+}
+
+.paket .row-paket .card .img-box {
+  max-width: 280px;
+  max-height: 250px;
+}
+
+.paket .row-paket .card .product-name {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.paket .row-paket .card .price {
+  font-size: 25px;
+  font-weight: 700;
+  color: #ecac5d;
+}
+
+.paket .row-paket .card .btn-cart {
+  padding: 15px;
+  background: #ecac5d;
+  border-radius: 10px 0px;
+}
+
+.paket .row-paket .card .btn-cart:hover {
+  background: #cd934c;
+}
+
+.paket .row-paket .card .btn-cart:hover i {
+  color: #e6e5e5;
+}
+
+.paket .row-paket .card .btn-cart i {
+  font-size: 30px;
+  color: #fff;
+}
+
+.seller .row-paket {
+  margin-top: 40px;
+}
+
+.seller .row-paket .card {
+  border: none;
+  border-radius: 20px;
+}
+
+.seller .row-paket .card .rating i {
+  color: #e9e208;
+}
+
+.seller .row-paket .card .img-box {
+  max-width: 280px;
+  max-height: 250px;
+}
+
+.seller .row-paket .card .product-name {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.seller .row-paket .card .price {
+  font-size: 25px;
+  font-weight: 700;
+  color: #ecac5d;
+}
+
+.seller .row-paket .card .btn-cart {
+  padding: 15px;
+  background: #ecac5d;
+  border-radius: 10px 0px;
+}
+
+.seller .row-paket .card .btn-cart:hover {
+  background: #cd934c;
+}
+
+.seller .row-paket .card .btn-cart:hover i {
+  color: #e6e5e5;
+}
+
+.seller .row-paket .card .btn-cart i {
+  font-size: 30px;
+  color: #fff;
+}
+
+.seller .row-paket .label-recomended {
+  top: 15px;
+  right: 15px;
+}
+
+.page-detail {
+  margin-top: 150px;
+}
+
+@media (max-width: 1399.98px) {
+  .page-detail {
+    margin-top: 150px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .page-detail {
+    margin-top: 100px;
+  }
+}
+
+.page-detail .description-detail li {
+  list-style: circle !important;
+}
+
+.page-detail .store-gallery {
+  margin-top: 20px;
+}
+
+.page-detail .store-gallery img {
+  border-radius: 10px;
+}
+
+.page-detail .store-gallery .thumbnail-image {
+  margin-bottom: 20px;
+  border: 2px solid transparent;
+}
+
+.page-detail .store-gallery .thumbnail-image:hover, .page-detail .store-gallery .thumbnail-image.active {
+  border: 2px solid #fbfb05;
+}
+
+.store-breadcrumb .breadcrumb {
+  background: transparent;
+}
+
+.store-breadcrumb .breadcrumb .breadcrumb-item.active {
+  color: #0c0d36;
+  font-weight: 600;
+}
+
+.store-breadcrumb .breadcrumb .breadcrumb-item a {
+  color: #979797;
+  text-decoration: none;
+}
+
+.store-detail .heading-detail {
+  margin-top: 100px;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 575.98px) {
+  .store-detail .heading-detail {
+    margin-top: 50px;
+  }
+}
+
+.store-detail .heading-detail .owner {
+  color: #979797;
+}
+
+.store-detail .heading-detail .price {
+  color: #ff7158;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.form-testi {
+  /*  
+     * Rating styles
+     */
+}
+
+.form-testi p,
+.form-testi p a {
+  color: #aaa;
+  text-decoration: none;
+}
+
+.form-testi p a:hover,
+.form-testi p a:focus {
+  text-decoration: underline;
+}
+
+.form-testi p + p {
+  color: #bbb;
+  margin-top: 2em;
+}
+
+.form-testi .detail {
+  position: absolute;
+  text-align: right;
+  right: 5px;
+  bottom: 5px;
+  width: 50%;
+}
+
+.form-testi a[href*="intent"] {
+  display: inline-block;
+  margin-top: 0.4em;
+}
+
+.form-testi .rating {
+  max-width: 600px;
+  font-size: 45px;
+  overflow: hidden;
+}
+
+.form-testi .rating input {
+  float: right;
+  opacity: 0;
+  position: absolute;
+}
+
+.form-testi .rating a,
+.form-testi .rating label {
+  color: #aaa;
+  text-decoration: none;
+  -webkit-transition: color 0.4s;
+  transition: color 0.4s;
+  margin: 0 15px;
+}
+
+@media (max-width: 575.98px) {
+  .form-testi .rating a,
+  .form-testi .rating label {
+    margin: 0 8px;
+  }
+}
+
+.form-testi .rating label:hover ~ label,
+.form-testi .rating input:focus ~ label,
+.form-testi .rating label:hover,
+.form-testi .rating a:hover,
+.form-testi .rating a:hover ~ a,
+.form-testi .rating a:focus,
+.form-testi .rating a:focus ~ a {
+  color: #cfd21b;
+  cursor: pointer;
+}
+
+.form-testi .rating2 {
+  direction: rtl;
+}
+
+.form-testi .rating2 a {
+  float: none;
 }
 /*# sourceMappingURL=main.css.map */
