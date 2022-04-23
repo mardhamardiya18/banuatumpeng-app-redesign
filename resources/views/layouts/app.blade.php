@@ -16,7 +16,12 @@
 
 <body class="font-sans antialiased">
     <div class="min-h-screen bg-gray-100">
-        @include('components.navbar-homepage')
+        @if (Request::url('/katalog', '*'))
+            @include('components.navbar-katalog')
+        @else
+            @include('components.navbar-homepage')
+        @endif
+
 
         @include('sweetalert::alert')
         {{-- Content --}}
