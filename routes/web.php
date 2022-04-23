@@ -35,7 +35,7 @@ Route::prefix('katalog')->group(function () {
     Route::get('/product/{slug}', [ProductController::class, 'product'])->name('product-detail');
 });
 
-Route::prefix('admin')->middleware('admin')->group(function () {
+Route::prefix('admin')->group(function () {
     Route::get('/', function () {
         return view('pages.admin.dashboard');
     })->name('dashboard-admin');

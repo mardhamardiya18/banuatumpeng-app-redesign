@@ -49,7 +49,7 @@
             <div class="container">
                 <div class="row heading-detail">
                     <div class="col-lg-8">
-                        <h2>{{ $product->name }}</h2>
+                        <h2>Paket {{ $product->name }}</h2>
                         <p class="owner">Kategori <a class=" text-decoration-none bold"
                                 href="{{ route('category-detail', $product->category->slug) }}">{{ $product->category->name }}</a>
                         </p>

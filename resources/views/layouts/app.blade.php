@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
+    <link rel="icon" type="image/png" href="/images/logo.svg">
 
     <title> @yield('title')</title>
 
@@ -16,7 +17,7 @@
 
 <body class="font-sans antialiased">
     <div class="min-h-screen bg-gray-100">
-        @if (Request::url('/katalog', '*'))
+        @if (request()->is('katalog'))
             @include('components.navbar-katalog')
         @else
             @include('components.navbar-homepage')

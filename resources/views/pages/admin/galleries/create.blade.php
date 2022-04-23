@@ -40,7 +40,7 @@
                                     <div class="form-group">
                                         <label for="price">Pilih Gambar</label>
                                         <input type="file" name="photos" class="form-control">
-                                        <small class="text-muted">*recommend 230 x 200 px</small>
+                                        <small class="text-muted">*recommend 600 x 530 px</small>
                                     </div>
 
                                 </div>
